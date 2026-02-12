@@ -23,9 +23,20 @@ int main(){
   return 0;
 }
 
-// 2nd problem
+// 2nd problem (1 to N)
 
 int count=0;
-void print(int count){
-  if(count==
+void print(int countn int N){
+  if(count>N) return;
+  cout << count+1;
+  print(count+1, N);
+}
+
+// 3rd problem (N to 1)
+
+int count = N;
+void print (int count){
+  if(count<1) return;
+  cout<<count;
+  print(count-1)
 }
