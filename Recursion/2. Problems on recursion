@@ -1,1 +1,31 @@
+// 1st problem:
+#include<bits/stdc++.h>
+using namespace std;
 
+int cnt=0;
+
+void print(){
+  if(cnt==5)
+    return;
+  cout<<"Atharva";
+  cnt++;
+  print();
+}
+
+int main(){
+  #ifndef ONLINE_JUDGE
+  freopen("input.txt". "r", stdin);
+  freopen("output.txt". "r", stdout);
+  #endif
+
+  print();
+
+  return 0;
+}
+
+// 2nd problem
+
+int count=0;
+void print(int count){
+  if(count==
+}
