@@ -1,0 +1,26 @@
+// using inbuilt stack functions
+
+class Q{
+  stack<int> s1;
+  stack<int> s2;
+
+  void Qpush(int x){
+    while(si.size()){
+      s2.push(s1.top());
+      s1.pop();
+    }
+    s1.push(x);
+    while(s2.size()){
+      s1.push(s2.top);
+      s2.pop();
+    }
+  }
+
+  int Qtop(){
+    return s1.top();
+  }
+
+  int pop(){
+    return s1.pop();
+  }
+};
