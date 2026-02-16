@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class stimple{
+  node* top;
+  int size = 0;
+
+  void push(int x){
+    node* temp = new node(x);
+    temp->next = top;
+    top = temp;
+    size = size+1;
+  }
+
+  void pop(){
+    node* temp = top;
+    cout<<"Poped element: "<<top->data;
+    top = top->next;
+    delete temp;
+    size = size-1;
+  }
+
+  int top(){
+    return top->data;
+  }
+
+  int size(){
+    return size;
+  }
+};
