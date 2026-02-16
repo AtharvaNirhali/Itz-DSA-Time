@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+classQ{
+  node* start;
+  node* end;
+
+  void push(int x){
+    node* temp = new node(x);
+    if(start==NULL){
+      start=end=temp;
+    }
+    else
+      end->next = temp;
+    size += 1;
+  }
+
+  void pop(){
+    if(start==NULL)
+      cout<<"Cannot pop, Queue is empty!";
+    node* temp = start;
+    cout<<"Poped element is: "<<start->data;
+    start = start->next;
+    delete temp;
+    size -= 1;
+  }
+
+  int top(){
+    if(start==NULL)
+      return 0;
+    return start->data;
+  }
+
+  int size(){
+    return size;
+  }
+};
