@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+usng namespace std;
+
+Bool isBalanced(vector<char> &arr){
+  stack<chat> s;
+  for(int i=0; i<arr.size(); i++){
+    if(arr[i]=='(' || arr[i]=='[' || arr[i]=='{')
+      s.push(arr[i]);
+    else{
+      if(arr.empty())
+        return false;
+      char ch = s.top();
+      s.pop();
+      if(s[i]==')'&&ch=='(' || s[i]==']'&&ch=='[' || s[i]=='}'&&ch=='{' || )
+      else
+        return false;
+    }
+  }
+  return st.empty();
+}
