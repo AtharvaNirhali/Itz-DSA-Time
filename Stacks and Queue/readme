@@ -1,0 +1,11 @@
+Lets learn stacks and queues
+
+stacks follow lifo(last in first out)
+queues follow fifo(first in first out)
+
+in this part we will see how to implement stack and queue using array and linked list
+also see how to implement stack wuing queue adn queue using stack
+
+then we will see infix, prefix and postfix in stacks and queues
+
+then lastly solving problems on s&q.
